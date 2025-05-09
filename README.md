@@ -23,14 +23,24 @@ Affiche les catégories d'incidents ou d'objets perdus enregistrés par la S.N.C
 
 Met en évidence les différents salaires moyens entre 2010 et 2018 des Cadres, Agents de conduite et Agents d'exécution.
 
-## Configuration du projet
+## Installation et lancement du projet
 
-```
-npm install
+### 1. Construire l'image Docker :
+
+```bash
+docker build -t vue-app .
 ```
 
-### Démarrage du serveur local pour le développement
+### 2. Lancer le conteneur :
 
+```bash
+docker run -d -p 8080:80 vue-app
 ```
-npm run serve
+
+### 3. Accéder à l'application :
+
+Ouvrez votre navigateur à l'adresse suivante :
+
+```bash
+http://localhost:8080
 ```
